@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="holapepino.RunCucumberTest" time="0.013" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="holapepino.RunCucumberTest" time="0.022" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @SpecificTest"/>
     <property name="java.vm.version" value="13.0.1+9"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\MarianoOyChan\Projects\holapepino"/>
@@ -43,7 +44,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @SpecificTest"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-13.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,7 +61,7 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0.011"/>
+  <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0.022"/>
   <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0"/>
-  <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0.002"/>
+  <testcase classname="Is it Friday yet?" name="Today is or is not Friday" time="0"/>
 </testsuite>
