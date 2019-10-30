@@ -3,7 +3,7 @@ package holapepino;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import sun.java2d.DisposerTarget;
+/*import sun.java2d.DisposerTarget;*/
 
 import static org.junit.Assert.*;
 class IsItFriday {
@@ -40,7 +40,6 @@ public class Stepdefs {
     public String this_is_a_blank_test() {
         // Write code here that turns the phrase above into concrete actions
         //throw new cucumber.api.PendingException();
-        return "this fine";
+        return "It´s fine";
     }
-
 }
