@@ -37,9 +37,10 @@ public class Stepdefs {
         assertEquals(expectedAnswer, actualAnswer);
     }
     @Given("This is a blank test")
-    public void this_is_a_blank_test() {
+    public String this_is_a_blank_test() {
         // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        //throw new cucumber.api.PendingException();
+        return "this fine";
     }
 
 }
