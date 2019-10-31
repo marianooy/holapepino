@@ -40,7 +40,6 @@ public class Stepdefs {
     public String this_is_a_blank_test() {
         // Write code here that turns the phrase above into concrete actions
         //throw new cucumber.api.PendingException();
-        return "this fine";
+        return "It´s fine from home change!";
     }
-
 }
