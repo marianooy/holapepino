@@ -3,7 +3,7 @@ package holapepino;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import sun.java2d.DisposerTarget;
+/*import sun.java2d.DisposerTarget;*/
 
 import static org.junit.Assert.*;
 class IsItFriday {
