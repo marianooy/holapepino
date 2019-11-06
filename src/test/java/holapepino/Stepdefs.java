@@ -3,6 +3,7 @@ package holapepino;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import holapepinouser.FakeUser;
 import org.json.JSONObject;
 /*import sun.java2d.DisposerTarget;*/
 
@@ -12,38 +13,11 @@ class IsItFriday {
         return "Friday".equals(today) ? "Awiwi" : "Nope";
     }
 }
-class myCollections {
-
-}
 
 public class Stepdefs {
-    private class anotherCollection{
 
-    }
     private String today;
     private String actualAnswer;
-
-    Integer user_id;
-    String name;
-    Integer Token;
-
-    public  int getUserId(){
-        JSONObject ob = new JsonData().data();
-        user_id = ob.getInt("user_id");
-        return user_id;
-    }
-    public String getUserName(){
-        JSONObject ob = new JsonData().data();
-        name = ob.getString("name");
-        return name;
-    }
-    public  int getUserToken(){
-        JSONObject ob = new JsonData().data();
-        Token = ob.getInt("toen");
-        return Token;
-    }
-
-
 
     @Given("today is {string}")
     public void today_is(String today) {
@@ -67,17 +41,17 @@ public class Stepdefs {
     }
     @Given("user name is {string}")
     public void user_name_is(String name) {
-        assertEquals(name, getUserName());
+        assertEquals(name, FakeUser.getUserName());
     }
 
     @When("get {int} as user id")
     public void get_as_user_id(Integer user_id) {
-        assertEquals((int)(user_id), getUserId());
+        assertEquals((int)(user_id), FakeUser.getUserId());
     }
 
     @Then("token should be {int} number")
     public void token_should_be_number(Integer token) {
-        assertEquals((int)(token), getUserToken());
+        assertEquals((int)(token), FakeUser.getUserToken());
     }
 
 }
