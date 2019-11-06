@@ -63,3 +63,16 @@ Examples:
          |Bank Transfer|
          |PayPal|
          |Cash|
+
+      @MarinTest
+      Scenario Outline: Testing User data
+         Given user name is "<name>"
+         When get <user_id> as user id
+         Then token should be <token> number
+         Examples:
+
+         |name|user_id|token|
+         |marino|  2   |123456789|
+         #|lucia |  2   |123456789|
+         #|marino|  3   |123456789|
+         #|marino|  2   |987654321|
