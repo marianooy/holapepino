@@ -68,8 +68,11 @@ Examples:
       Scenario Outline: Testing User data
          Given user name is "<name>"
          When get <user_id> as user id
-         Then token Shoulb be <token> number
+         Then token should be <token> number
          Examples:
 
          |name|user_id|token|
-         |marin|  1   |123456789|
+         |marino|  2   |123456789|
+         #|lucia |  2   |123456789|
+         #|marino|  3   |123456789|
+         #|marino|  2   |987654321|

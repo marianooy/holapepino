@@ -26,11 +26,21 @@ public class Stepdefs {
     Integer user_id;
     String name;
     Integer Token;
-    public  void getData(){
+
+    public  int getUserId(){
         JSONObject ob = new JsonData().data();
         user_id = ob.getInt("user_id");
+        return user_id;
+    }
+    public String getUserName(){
+        JSONObject ob = new JsonData().data();
         name = ob.getString("name");
+        return name;
+    }
+    public  int getUserToken(){
+        JSONObject ob = new JsonData().data();
         Token = ob.getInt("toen");
+        return Token;
     }
 
 
@@ -57,17 +67,17 @@ public class Stepdefs {
     }
     @Given("user name is {string}")
     public void user_name_is(String name) {
-        name = this.name;
+        assertEquals(name, getUserName());
     }
 
     @When("get {int} as user id")
     public void get_as_user_id(Integer user_id) {
-        user_id = this.user_id;
+        assertEquals((int)(user_id), getUserId());
     }
 
-    @Then("token Shoulb be {int} number")
-    public void token_Shoulb_be_number(Integer token) {
-        token = this.Token;
+    @Then("token should be {int} number")
+    public void token_should_be_number(Integer token) {
+        assertEquals((int)(token), getUserToken());
     }
 
 }
