@@ -3,6 +3,7 @@ package holapepino;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.json.JSONObject;
 /*import sun.java2d.DisposerTarget;*/
 
 import static org.junit.Assert.*;
@@ -21,6 +22,18 @@ public class Stepdefs {
     }
     private String today;
     private String actualAnswer;
+
+    Integer user_id;
+    String name;
+    Integer Token;
+    public  void getData(){
+        JSONObject ob = new JsonData().data();
+        user_id = ob.getInt("user_id");
+        name = ob.getString("name");
+        Token = ob.getInt("toen");
+    }
+
+
 
     @Given("today is {string}")
     public void today_is(String today) {
@@ -42,4 +55,19 @@ public class Stepdefs {
         //throw new cucumber.api.PendingException();
         return "It´s fine from home change!";
     }
+    @Given("user name is {string}")
+    public void user_name_is(String name) {
+        name = this.name;
+    }
+
+    @When("get {int} as user id")
+    public void get_as_user_id(Integer user_id) {
+        user_id = this.user_id;
+    }
+
+    @Then("token Shoulb be {int} number")
+    public void token_Shoulb_be_number(Integer token) {
+        token = this.Token;
+    }
+
 }
