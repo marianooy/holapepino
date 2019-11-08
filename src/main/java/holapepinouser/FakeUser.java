@@ -3,9 +3,9 @@ package holapepinouser;
 import org.json.JSONObject;
 
 public class FakeUser {
-    static Integer user_id;
-    static String name;
-    static Integer Token;
+    private static Integer user_id;
+    private static String name;
+    private static Integer Token;
 
     public static int getUserId(){
         JSONObject ob = new JsonData().data();
