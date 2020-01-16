@@ -1,4 +1,4 @@
-package holapepino.stepdefinitios;
+package holapepino.stepdefinitions;
 
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.Before;

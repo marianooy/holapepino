@@ -1,4 +1,4 @@
-package holapepino.stepdefinitios;
+package holapepino.stepdefinitions;
 
 import holapepinouser.FakeUser;
 import io.cucumber.java.en.Given;

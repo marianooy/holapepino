@@ -25,12 +25,13 @@ import net.masterthought.cucumber.sorting.SortingMethod;
 
 public class ConfigurationFactory {
 
-    private static final String DEFAULT_FILENAME = "config.properties";
+    private static final String DEFAULT_FILENAME = "cucumber-reporting.properties";
     private static final String TAGS_TO_EXCLUDE_FROM_CHART_PATTERN = "^tagsToExcludeFromChart\\.\\d+$";
     private static final String PRESENTATION_MODE_PREFIX = "presentationMode.";
     private static final String REDUCING_METHOD_PREFIX = "reducingMethod.";
     private static final String CLASSIFICATIONS_PREFIX = "classifications.";
-    public static final String CONFIG_FILE_PROPERTY = "cucumber.reporting.config.file";
+   // public static final String CONFIG_FILE_PROPERTY = "cucumber.reporting.config.file";
+    public static final String CONFIG_FILE_PROPERTY = "src.test.resources";
 
     public static Configuration getConfiguration(final File outputDir) {
         final Properties properties = loadProperties();

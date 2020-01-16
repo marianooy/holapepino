@@ -1,4 +1,4 @@
-package holapepino.stepdefinitios;
+package holapepino.stepdefinitions;
 
 
 //import com.cucumber.listener.Reporter;
@@ -9,10 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/holapepino"},
-        glue = {"holapepino.stepdefinitios"},
+        glue = {"holapepino.stepdefinitions"},
         plugin = {
-                "holapepino.extentreport.PrettyReports:target/extent/prettyreport.html"
-        }
+                "holapepino.extentreport.PrettyReports:target/extent/"
+        },
+        tags = {"@MarinTest"}
 )
 
 
