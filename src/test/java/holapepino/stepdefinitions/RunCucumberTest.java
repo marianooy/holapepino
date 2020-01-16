@@ -12,8 +12,7 @@ import io.cucumber.junit.CucumberOptions;
         glue = {"holapepino.stepdefinitions"},
         plugin = {
                 "holapepino.extentreport.PrettyReports:target/extent/"
-        },
-        tags = {"@MarinTest"}
+        }
 )
 
 
